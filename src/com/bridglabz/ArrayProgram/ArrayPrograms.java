@@ -6,6 +6,7 @@ public class ArrayPrograms {
         largestArrayElement3();
         smallestElement();
         oddArray();
+        duplicate();
     }
     public static void printArray1(){
         int arr1[]=new int[]{1,2,4,5,3,7,6,9};
@@ -33,14 +34,29 @@ public class ArrayPrograms {
         System.out.println();
     }
     public static void oddArray(){
+
         int arr6[]=new int[]{1,2,3,4,5,6,7,8,9};
+        System.out.print("Odd element in an array:");
         for(int oddArr:arr6){
             if(oddArr%2!=0){
+                System.out.print(" "+oddArr);
             }
-            System.out.print(" "+oddArr);
         }
-
+        System.out.println();
     }
+
+    public static void duplicate(){
+        int arr[]=new int[]{1,2,3,2,4,6,5};
+        System.out.println("Duplicate element:");
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+              if(arr[i]==(arr[j])){
+                  System.out.println(arr[j]);
+              }
+            }
+        }
+    }
+
 }
 
 
