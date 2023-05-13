@@ -5,6 +5,7 @@ public class ArrayPrograms {
         printArray1();
         largestArrayElement3();
         smallestElement();
+        oddArray();
     }
     public static void printArray1(){
         int arr1[]=new int[]{1,2,4,5,3,7,6,9};
@@ -29,6 +30,16 @@ public class ArrayPrograms {
                 min=arr[i];
         }
         System.out.print("Smallest element in an array:"+min);
+        System.out.println();
+    }
+    public static void oddArray(){
+        int arr6[]=new int[]{1,2,3,4,5,6,7,8,9};
+        for(int oddArr:arr6){
+            if(oddArr%2!=0){
+            }
+            System.out.print(" "+oddArr);
+        }
+
     }
 }
 
